@@ -1,12 +1,60 @@
+/* General */
+import Image from 'next/image'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 /* CSS */
-import { NavbarWrapper } from "./Navbar.styled"
+import { NavbarStyles } from "./Navbar.styled"
+
+/* Assets */
+import brand from '../../../assets/simple_brand.png'
+import { Container } from '../../../styles/global'
+
+/* Font Awesome */
+import { faDiscord } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Navbar = () => {
-  return (
-    <NavbarWrapper>
 
-    </NavbarWrapper>
+  const router = useRouter();
+
+  return (
+    
+    <NavbarStyles>
+      <Container className='container'>
+        <div className="brand-container">
+          <Link href='/'>
+            <Image
+              className='brand'
+              alt="RX6"
+              src={brand}
+            />
+          </Link>
+        </div>
+
+        <div className="links-container">
+          <ul>
+            <li className={router.pathname == "/" ? "active" : ""}>
+              <Link href='/'>Início</Link>
+            </li>
+            <li>
+              <Link href='/teste'>Nossos serviços</Link>
+            </li>
+            <li>
+              <Link href='/teste'>Institucional</Link>
+            </li>
+            <li>
+              <Link href='/teste'>Quem somos?</Link>
+            </li>
+          </ul>
+        </div>
+
+        <div className='discord-cta'>
+          <button><FontAwesomeIcon icon={faDiscord} /> Servidor do Discord</button>
+        </div>
+      </Container>
+    </NavbarStyles>
+    
   )
 }
 
