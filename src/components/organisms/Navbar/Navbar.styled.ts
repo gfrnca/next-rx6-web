@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const NavbarStyles = styled.div `
   width: 100%;
   height: 90px;
-  background: ${props => props.theme.colors.primary};
+  background: rgba(0, 3, 22, 0.0);
   display: flex;
   align-items: center;
 
@@ -57,8 +57,11 @@ export const NavbarStyles = styled.div `
   }
 
   .discord-cta button {
-    padding: 15px 20px;
+    padding: 10px 10px;
+    height: 50px;
+    width: 200px;
     display: flex;
+    justify-content: center;
     align-items: center;
     font-weight: 600;
     font-size: 13px;
@@ -69,12 +72,13 @@ export const NavbarStyles = styled.div `
     cursor: pointer;  
 
     svg {
+      width: 30px;
       margin-right: 10px;
     }
   }
 
   .discord-cta button:hover {
-    background: ${props => props.theme.colors.primary};
+    background: rgba(0, 3, 22, 0.0);
     color: #fff;
     outline: 1px solid #fff;
   }

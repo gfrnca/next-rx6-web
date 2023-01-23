@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import HomePage from '../components/templates/Home/HomePage';
 import { Container } from '../styles/global';
 
 const Home: React.FC = () => {
@@ -10,9 +11,7 @@ const Home: React.FC = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
     
-      <Container>
-        AA
-      </Container>
+        <HomePage />
     </div>
   )
 }
