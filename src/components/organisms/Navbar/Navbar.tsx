@@ -1,6 +1,12 @@
+
+/* CSS */
+import { NavbarWrapper } from "./Navbar.styled"
+
 const Navbar = () => {
   return (
-    <div>Navbar</div>
+    <NavbarWrapper>
+
+    </NavbarWrapper>
   )
 }
 
