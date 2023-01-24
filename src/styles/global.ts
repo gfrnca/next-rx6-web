@@ -11,6 +11,7 @@ export default createGlobalStyle`
   a {
     text-decoration: none;
     color: unset;
+    -webkit-tap-highlight-color: transparent;
   }
 
   body {
