@@ -37,10 +37,19 @@ export const FooterStyles = styled.div `
       cursor: pointer;
       transition: 0.2s all;
 
-      &:hover {
-        scale: 1.22;
-        background: #0f0038;
-      }
+
+
+
+    }
+
+    .instagram:hover {
+      scale: 1.22;
+      background: linear-gradient(140deg, #5B51D8, #C13584, #FCAF45) !important;
+    }
+
+    .discord:hover {
+      scale: 1.22;
+      background: #5865F2;
     }
   }
 `

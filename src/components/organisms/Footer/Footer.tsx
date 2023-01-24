@@ -15,10 +15,10 @@ const Footer = () => {
           <p>Desenvolvido com ❤️ pela RX6</p>
 
           <div className="social-medias">
-            <div className="social">
+            <div className="social instagram">
               <FontAwesomeIcon icon={ faInstagram } />
             </div>
-            <div className="social">
+            <div className="social discord">
               <FontAwesomeIcon icon={ faDiscord } />
             </div>
           </div>
