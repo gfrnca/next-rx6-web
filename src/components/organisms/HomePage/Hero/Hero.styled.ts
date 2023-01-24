@@ -126,6 +126,6 @@ export const HeroStyles = styled.div `
   }
 
   .divisor {
-    margin-bottom: -80px;
+    margin-bottom: -20px;
   }
 `

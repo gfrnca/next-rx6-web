@@ -14,6 +14,7 @@ export const PlatformsStyles = styled.div `
     h1 {
       font-size: 30px;
       margin-bottom: 60px;
+      text-align: center;
 
       
       span {
@@ -27,6 +28,8 @@ export const PlatformsStyles = styled.div `
 
     .platforms {
       display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       flex-direction: row;
       gap: 50px;
 

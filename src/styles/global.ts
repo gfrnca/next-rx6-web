@@ -20,6 +20,12 @@ export default createGlobalStyle`
     min-height: 100vh;
   }
 
+  h1 {
+    @media (max-width: 768px) {
+      line-height: 1.5;
+    }
+  }
+
   #__next {
     min-height: 100%;
   }
