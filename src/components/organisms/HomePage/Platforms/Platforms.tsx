@@ -8,12 +8,13 @@ import { PlatformsStyles } from "./Platforms.styled"
 import fivem from '../../../../assets/white_fivem.png'
 import redm from '../../../../assets/white_redm.png'
 import discord from '../../../../assets/white_discord.png'
+import telegram from '../../../../assets/white_telegram.png'
 
 const Platforms = () => {
   return (
     <PlatformsStyles>
       <div className="platforms-wrapper">
-        <h1>Qual a sua <span>plataforma</span>?</h1>
+        <h1>Qual a sua <span>plataforma</span> ?</h1>
 
         <div className="platforms">
           <div className="platform">
@@ -43,6 +44,16 @@ const Platforms = () => {
               title='Em breve'
             />
             <p>Discord</p>
+            <span>Em breve</span>
+          </div>
+          <div className="platform disabled">
+            <Image
+              className='platform-icon'
+              src={telegram}
+              alt="Telegram"
+              title='Em breve'
+            />
+            <p>Telegram</p>
             <span>Em breve</span>
           </div>
         </div>
