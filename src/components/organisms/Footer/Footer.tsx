@@ -12,7 +12,7 @@ const Footer = () => {
     <FooterStyles>
       <Container className='container'>
         <div className="footer-wrapper">
-          <p>Desenvolvido com ❤️ pela RX6</p>
+          <p>{'</Desenvolvido com ❤️ pela RX6>'}</p>
 
           <div className="social-medias">
             <div className="social instagram">
