@@ -26,8 +26,8 @@ const Navbar = () => {
           <Link href='/'>
             <Image
               className='brand'
-              alt="RX6"
               src={brand}
+              alt="RX6"
             />
           </Link>
         </div>
@@ -50,7 +50,7 @@ const Navbar = () => {
         </div>
 
         <div className='discord-cta'>
-          <button><FontAwesomeIcon icon={faDiscord} /> Servidor do Discord</button>
+          <button className='button'><FontAwesomeIcon icon={faDiscord} /> Servidor do Discord</button>
         </div>
       </Container>
     </NavbarStyles>

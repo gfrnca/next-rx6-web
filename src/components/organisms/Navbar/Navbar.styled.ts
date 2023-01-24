@@ -6,6 +6,7 @@ export const NavbarStyles = styled.div `
   background: rgba(0, 3, 22, 0.0);
   display: flex;
   align-items: center;
+  margin-bottom: 60px;
 
   .brand {
     width: 30px;
@@ -24,6 +25,9 @@ export const NavbarStyles = styled.div `
     @media (max-width: 800px) {
       display: none;
     }
+
+    margin-right: auto;
+    margin-left: 50px;
   }
 
   .links-container ul {
@@ -56,32 +60,64 @@ export const NavbarStyles = styled.div `
     }
   }
 
-  .discord-cta button {
-    padding: 10px 10px;
-    height: 50px;
-    width: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 600;
-    font-size: 13px;
+  .button {
+    display: inline-flex;
     border-radius: 4px;
-    border: none;
-    background: #fff;
-    color: ${props => props.theme.colors.primary};
-    cursor: pointer;  
-
-    svg {
-      width: 30px;
-      margin-right: 10px;
-    }
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    padding: 10px 20px;
+    align-items: center;
+    color: white;
+    border: none !important;
+    font-size: 17px;
+    z-index: 1;
+    cursor: pointer;
+    background: linear-gradient(90deg, rgba(22, 3, 54, 0.5), rgba(0, 6, 46, 0.5));
   }
 
-  .discord-cta button:hover {
-    background: rgba(0, 3, 22, 0.0);
-    color: #fff;
-    outline: 1px solid #fff;
+  .button svg {
+    width: 20px;
+    margin-right: 15px;
   }
 
+  .button:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+  }
 
+  .button:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: white;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+  }
+
+  .button:hover {
+    color: black;
+  }
+
+  .button:hover:before {
+    top: -35%;
+    background-color: white;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  }
 `
