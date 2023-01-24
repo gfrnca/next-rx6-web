@@ -7,13 +7,13 @@ import { PlatformsStyles } from "./Platforms.styled"
 /* Assets */
 import fivem from '../../../../assets/white_fivem.png'
 import redm from '../../../../assets/white_redm.png'
-import discord from '../../../assets/white_discord.png'
+import discord from '../../../../assets/white_discord.png'
 
 const Platforms = () => {
   return (
     <PlatformsStyles>
       <div className="platforms-wrapper">
-        <h1>Plataformas suportadas</h1>
+        <h1>Qual a sua <span>plataforma</span>?</h1>
 
         <div className="platforms">
           <div className="platform">
@@ -21,6 +21,7 @@ const Platforms = () => {
               className='platform-icon'
               src={fivem}
               alt="FiveM"
+              title='Integre todo o seu servidor com o Discord'
             />
             <p>FiveM</p>
           </div>
@@ -32,15 +33,17 @@ const Platforms = () => {
               title='Em breve'
             />
             <p>RedM</p>
+            <span>Em breve</span>
           </div>
           <div className="platform disabled">
             <Image
               className='platform-icon'
-              src={redm}
-              alt="RedM"
+              src={discord}
+              alt="Discord"
               title='Em breve'
             />
-            <p>RedM</p>
+            <p>Discord</p>
+            <span>Em breve</span>
           </div>
         </div>
       </div>

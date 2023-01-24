@@ -20,6 +20,10 @@ export const HeroStyles = styled.div `
       background: linear-gradient(90deg, #160336, #00062e);
       font-weight: 500;
     }
+
+    @media (max-width: 768px) {
+      line-height: 1.5;
+    }
   }
 
   .hero-wrapper p {
@@ -86,7 +90,7 @@ export const HeroStyles = styled.div `
   }
 
   .box .content {
-    height: 254px;
+    min-height: 254px;
     width: 400px;
     padding: 20px 40px;
     background: rgba(0, 0, 91, 0.05);
@@ -98,6 +102,11 @@ export const HeroStyles = styled.div `
     color: #fff;
     display: flex;
     flex-direction: column;
+
+    @media (max-width: 768px) {
+      width: 300px;
+
+    }
   }
 
   .box .content h2 {

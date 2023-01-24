@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const PlatformsStyles = styled.div `
   width: 100%;
-  height: 1000px;
+  padding-bottom: 120px;
   background: rgba(22, 3, 54, 0.3);
 
   .platforms-wrapper {
@@ -14,15 +14,25 @@ export const PlatformsStyles = styled.div `
     h1 {
       font-size: 30px;
       margin-bottom: 60px;
+
+      
+      span {
+        font-size: 30px;
+        padding: 5px 12px;
+        border-radius: 6px;
+        background: linear-gradient(90deg, #160336, #00062e);
+        font-weight: 500;
+      }
     }
 
     .platforms {
       display: flex;
       flex-direction: row;
       gap: 50px;
-        
-      .disabled {
+
+      .disabled p, .disabled img {
         opacity: 0.3;
+        cursor: not-allowed !important;
       }
 
       .platform {
@@ -30,6 +40,9 @@ export const PlatformsStyles = styled.div `
         flex-direction: column;
         align-items: center;
         transition: 0.5s all;
+        cursor: pointer;
+        align-items: center;
+        
 
         .platform-icon {
           width: 80px;
@@ -39,6 +52,15 @@ export const PlatformsStyles = styled.div `
 
         p {
           margin-top: 10px;
+        }
+        
+        span {
+          margin-top: 8px;
+          border-radius: 6px;
+          padding: 5px;
+          background: linear-gradient(90deg, rgba(22, 3, 54, 0.5), rgba(11, 1, 28, 0.5));
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          outline: #00062e;
         }
 
         &:hover {

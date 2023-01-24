@@ -39,6 +39,7 @@ export const NavbarStyles = styled.div `
     list-style: none;
     margin-right: 50px;
     color: #cccccc;
+    transition: 0.2s all;
   }
 
   .links-container ul li:hover {
