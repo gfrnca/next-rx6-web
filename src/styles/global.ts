@@ -6,12 +6,12 @@ export default createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     font: 400 16px Inter, sans-serif;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
   }
 
   a {
     text-decoration: none;
     color: unset;
-    -webkit-tap-highlight-color: transparent;
   }
 
   body {

@@ -32,7 +32,9 @@ export const HeroStyles = styled.div `
   }
 
   .hero-benefits {
+    width: 100%;
     display: flex;
+    justify-content: center;
     flex-direction: row;
     margin-top: 50px;
     gap: 40px;
