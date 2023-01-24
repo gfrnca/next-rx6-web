@@ -10,7 +10,7 @@ const HomePage = () => {
   return (
     <HomePageStyles>
        <Hero />
-       <Platforms></Platforms>
+       <Platforms />
     </HomePageStyles>
   )
 }

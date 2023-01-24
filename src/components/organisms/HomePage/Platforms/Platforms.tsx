@@ -9,23 +9,26 @@ import fivem from '../../../../assets/white_fivem.png'
 import redm from '../../../../assets/white_redm.png'
 import discord from '../../../../assets/white_discord.png'
 import telegram from '../../../../assets/white_telegram.png'
+import Link from 'next/link'
 
 const Platforms = () => {
   return (
     <PlatformsStyles>
-      <div className="platforms-wrapper">
+      <div id='platforms' className="platforms-wrapper">
         <h1>Qual a sua <span>plataforma</span> ?</h1>
 
         <div className="platforms">
-          <div className="platform">
-            <Image
-              className='platform-icon'
-              src={fivem}
-              alt="FiveM"
-              title='Integre todo o seu servidor com o Discord'
-            />
-            <p>FiveM</p>
-          </div>
+          <a target='_blank' href={'https://discord.com/channels/778152778648256563/1067533456726298684'}>
+            <div className="platform">
+              <Image
+                className='platform-icon'
+                src={fivem}
+                alt="FiveM"
+                title='Integre todo o seu servidor com o Discord'
+              />
+              <p>FiveM</p>
+            </div>
+          </a>
           <div className="platform disabled">
             <Image
               className='platform-icon'
