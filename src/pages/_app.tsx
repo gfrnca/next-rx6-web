@@ -1,6 +1,7 @@
 /* General */
 import type { AppProps } from 'next/app'
 import { ThemeProvider } from 'styled-components';
+import Footer from '../components/organisms/Footer/Footer';
 import Navbar from '../components/organisms/Navbar/Navbar';
 
 /* Global Style */
@@ -14,6 +15,7 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
     <ThemeProvider theme={theme}>
       <Navbar />
       <Component {...pageProps} />
+      <Footer />
 
       { /* Global Styles Import */ }
       <GlobalStyles />

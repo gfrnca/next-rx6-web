@@ -10,7 +10,4 @@ import backgroundImage from '../../../assets/background.png'
 
 export const HomePageStyles = styled.div `
   width: 100%;
-  height: 100vh;
-  
-
 `
