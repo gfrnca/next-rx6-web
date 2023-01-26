@@ -32,7 +32,7 @@ export const FooterStyles = styled.div `
       padding: 8px;
       width: 35px;
       height: 35px;
-      background: #0a0026;
+      background: #000d36;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       border-radius: 100%;
       cursor: pointer;

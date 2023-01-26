@@ -89,14 +89,14 @@ export const HeroStyles = styled.div `
 
   .box:before,
   .box:after {
-    background: linear-gradient(315deg, #160336, #000629)
+    background: linear-gradient(315deg, #000d36, #000208)
   }
 
   .box .content {
     min-height: 254px;
     width: 400px;
     padding: 20px 40px;
-    background: rgba(35, 9, 84, 0.12);
+    background: rgba(0, 13, 54, 0.12);
     backdrop-filter: blur(10px);
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.4);
     border-radius: 8px;
