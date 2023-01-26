@@ -14,9 +14,14 @@ import { Container } from '../../../../styles/global'
 
 const Platforms = () => {
   return (
-    <PlatformsStyles>
+    <PlatformsStyles id='platforms'>
       <Container>
-        <div id='platforms' className="platforms-wrapper">
+        <div className="platforms-wrapper">
+          <div className="our-services">
+            <p><span>Desenvolvemos diversos métodos automatizados de integração com o Discord em várias plataformas</span>, dando êmfase na liberdade de nossos clientes na hora da customização.</p>
+          </div>
+
+
           <h1>Qual a sua <span>plataforma</span> ?</h1>
 
           <div className="platforms">

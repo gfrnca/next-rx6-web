@@ -1,6 +1,6 @@
 const theme = {
   colors: {
-    background: 'linear-gradient(360deg, #3d1588, #080114)',
+    background: 'linear-gradient(360deg, #000629, #000316)',
     text: '#e1e1e6',
     primary: '#000316', 
   },

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const PlatformsStyles = styled.div `
   width: 100%;
   padding-bottom: 120px;
-  background: #12022e;
+  background: #000314;
 
   .platforms-wrapper {
     width: 100%;
@@ -25,6 +25,22 @@ export const PlatformsStyles = styled.div `
         color: #12022e;
         font-weight: 500;
       }
+    }
+
+    .our-services {
+      margin-bottom: 80px;
+    }
+
+    .our-services p {
+      font-size: 24px;
+      text-align: center; 
+      line-height: 1.5;
+
+      span {
+        font-size: 24px;
+        font-weight: 600;
+      }
+
     }
 
     .platforms {

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const FooterStyles = styled.div `
   width: 100%;
   padding: 40px;
-  background: #050012;
+  background: #00020a;
 
   .container {
     width: 100%;

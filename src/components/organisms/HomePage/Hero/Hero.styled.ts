@@ -89,7 +89,7 @@ export const HeroStyles = styled.div `
 
   .box:before,
   .box:after {
-    background: linear-gradient(315deg, #160336, #230954)
+    background: linear-gradient(315deg, #160336, #000629)
   }
 
   .box .content {
