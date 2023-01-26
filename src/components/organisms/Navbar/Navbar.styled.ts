@@ -3,14 +3,19 @@ import styled from 'styled-components'
 export const NavbarStyles = styled.div `
   width: 100%;
   height: 90px;
-  background: #00000a;
+  background: rgba(35, 9, 84, 0.0);
   display: flex;
   align-items: center;
   margin-bottom: 60px;
   position: sticky;
   top: 0;
   z-index: 100;
-  transition: 0.2s all;
+  transition: 0.6s all;
+
+  &.active {
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+  }
 
   .brand {
     width: 30px;

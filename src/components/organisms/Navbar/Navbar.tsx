@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import { useEffect, useState } from 'react'
 
 /* CSS */
 import { NavbarStyles } from "./Navbar.styled"
@@ -14,13 +15,32 @@ import { Container } from '../../../styles/global'
 import { faDiscord } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const Navbar = () => {
 
+const Navbar = () => {
   const router = useRouter();
+
+  const [navbar, setNavbar] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  /* Change background to blurred when scrolling */
+  const changeBackground = () => {
+    if (window.scrollY >= 66) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+
+  useEffect(() => {
+    changeBackground();
+    window.addEventListener("scroll", changeBackground);
+    setLoading(true);
+  }, []);
+
 
   return (
     
-    <NavbarStyles>
+    <NavbarStyles className={navbar ? 'active' : ''}>
       <Container className='container'>
         <div className="brand-container">
           <Link href='/'>

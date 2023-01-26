@@ -17,8 +17,9 @@ export const HeroStyles = styled.div `
       font-size: 30px;
       padding: 5px 12px;
       border-radius: 6px;
-      background: linear-gradient(90deg, #160336, #00062e);
+      background: linear-gradient(90deg, white, white);
       font-weight: 500;
+      color: #080114;
     }
 
     @media (max-width: 768px) {
@@ -88,16 +89,16 @@ export const HeroStyles = styled.div `
 
   .box:before,
   .box:after {
-    background: linear-gradient(315deg, #160336, #00020f)
+    background: linear-gradient(315deg, #160336, #230954)
   }
 
   .box .content {
     min-height: 254px;
     width: 400px;
     padding: 20px 40px;
-    background: rgba(0, 0, 91, 0.05);
+    background: rgba(35, 9, 84, 0.12);
     backdrop-filter: blur(10px);
-    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.4);
     border-radius: 8px;
     z-index: 1;
     transform: 0.5s;
