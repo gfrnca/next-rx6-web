@@ -38,6 +38,7 @@ export const InstitutionalSidebarStyles = styled.div `
     cursor: pointer;
     border-radius: 8px;
     margin-bottom: 20px;
+    text-align: center;
   }
 
   .policy:last-child {
@@ -70,4 +71,7 @@ export const InstitutionalSidebarStyles = styled.div `
     background: linear-gradient(315deg, #000d36, #000208)
   }
 
+  @media (max-width: 768px) {
+    display: none;
+  }
 `
