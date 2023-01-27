@@ -60,8 +60,8 @@ const Navbar = () => {
             <li>
               <Link href='/#platforms' scroll={false}>Nossos serviços</Link>
             </li>
-            <li className={router.pathname == "/institutional" ? "active" : ""}>
-              <Link href='/institutional'>Institucional</Link>
+            <li className={router.pathname == "/institucional" ? "active" : ""}>
+              <Link href='/institucional/politicas-de-privacidade'>Institucional</Link>
             </li>
             <li>
               <Link href='/teste'>Quem somos?</Link>
