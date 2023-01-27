@@ -37,7 +37,7 @@ export const InstitutionalSidebarStyles = styled.div `
     align-items: center;
     cursor: pointer;
     border-radius: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     text-align: center;
   }
 

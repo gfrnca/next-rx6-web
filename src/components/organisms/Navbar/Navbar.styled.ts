@@ -6,7 +6,6 @@ export const NavbarStyles = styled.div `
   background: rgba(35, 9, 84, 0.0);
   display: flex;
   align-items: center;
-  margin-bottom: 60px;
   position: sticky;
   top: 0;
   z-index: 100;
