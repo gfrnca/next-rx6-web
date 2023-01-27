@@ -15,12 +15,17 @@ const Footer = () => {
           <p>{'</Desenvolvido com ❤️ pela RX6>'}</p>
 
           <div className="social-medias">
-            <div className="social instagram">
-              <FontAwesomeIcon icon={ faInstagram } />
-            </div>
-            <div className="social discord">
-              <FontAwesomeIcon icon={ faDiscord } />
-            </div>
+            <a href='https://www.instagram.com/rx6gg/' target='_blank'>
+              <div className="social instagram">
+                <FontAwesomeIcon icon={ faInstagram } />  
+              </div>
+            </a>
+
+            <a href='https://discord.gg/fJC24gpDZ2' target='_blank'>
+              <div className="social discord">
+                <FontAwesomeIcon icon={ faDiscord } />
+              </div>
+            </a>
           </div>
         </div>
       </Container>

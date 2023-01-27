@@ -83,7 +83,8 @@ export const NavbarStyles = styled.div `
     font-size: 17px;
     z-index: 1;
     cursor: pointer;
-    background: linear-gradient(90deg, rgba(22, 3, 54, 0.5), rgba(0, 6, 46, 0.5));
+    background: #00071c;
+    outline: 1px solid rgba(0,23,97, 0.66) !important;
   }
 
   .button svg {

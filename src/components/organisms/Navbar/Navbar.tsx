@@ -58,10 +58,10 @@ const Navbar = () => {
               <Link href='/'>Início</Link>
             </li>
             <li>
-              <Link href='#platforms' scroll={false}>Nossos serviços</Link>
+              <Link href='/#platforms' scroll={false}>Nossos serviços</Link>
             </li>
-            <li>
-              <Link href='/teste'>Institucional</Link>
+            <li className={router.pathname == "/institutional" ? "active" : ""}>
+              <Link href='/institutional'>Institucional</Link>
             </li>
             <li>
               <Link href='/teste'>Quem somos?</Link>
@@ -70,7 +70,11 @@ const Navbar = () => {
         </div>
 
         <div className='discord-cta'>
-          <button className='button'><FontAwesomeIcon icon={faDiscord} /> Servidor do Discord</button>
+          <a href='https://discord.gg/fJC24gpDZ2' target='_blank'>
+            <button className='button'>
+              <FontAwesomeIcon icon={faDiscord} /> Servidor do Discord
+            </button>
+          </a>
         </div>
       </Container>
     </NavbarStyles>

@@ -19,7 +19,7 @@ export const HeroStyles = styled.div `
       border-radius: 6px;
       background: linear-gradient(90deg, white, white);
       font-weight: 500;
-      color: #080114;
+      color: #000208;
     }
 
     @media (max-width: 768px) {

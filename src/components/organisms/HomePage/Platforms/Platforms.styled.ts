@@ -22,7 +22,7 @@ export const PlatformsStyles = styled.div `
         padding: 5px 12px;
         border-radius: 6px;
         background: white;
-        color: #12022e;
+        color: #000314;
         font-weight: 500;
       }
     }
@@ -85,6 +85,14 @@ export const PlatformsStyles = styled.div `
 
         &:hover {
           scale: 1.05;
+
+
+          .platform-icon {
+            -webkit-box-shadow: 0px 15px 53px -6px rgba(0,23,97,0.66);
+            -moz-box-shadow: 0px 15px 53px -6px rgba(0,23,97,0.66);
+            box-shadow: 0px 15px 53px -6px rgba(0,23,97,0.66);
+          }
+
         }
       }
     }

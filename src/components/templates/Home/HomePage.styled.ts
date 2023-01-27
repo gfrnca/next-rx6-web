@@ -1,13 +1,6 @@
 /* General */
-import { StaticImageData } from 'next/image';
 import styled from 'styled-components'
 
-
-/* Background */
-import backgroundImage from '../../../assets/background.png' 
-
-
-
-export const HomePageStyles = styled.div `
+export const HomePageStyles = styled.main `
   width: 100%;
 `
