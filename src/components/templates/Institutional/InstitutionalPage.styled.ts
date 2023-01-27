@@ -26,7 +26,7 @@ export const InstitutionalPageStyles = styled.div `
 
 export const InstitutionalContent = styled.div `
   width: 100%;
-  background: white;
+  background: ${props => props.theme.colors.text};
   border-top-right-radius: 16px;
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
