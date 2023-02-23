@@ -1,20 +1,19 @@
 /* General */
-import Image from 'next/image'
-import Link from 'next/link'
-import { useRouter } from 'next/router'
-import { useEffect, useState } from 'react'
+import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 
 /* CSS */
-import { NavbarStyles } from "./Navbar.styled"
+import { NavbarStyles } from "./Navbar.styled";
 
 /* Assets */
-import brand from '../../../assets/simple_brand.png'
-import { Container } from '../../../styles/global'
+import brand from "../../../assets/simple_brand.png";
+import { Container } from "../../../styles/global";
 
 /* Font Awesome */
-import { faDiscord } from '@fortawesome/free-brands-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
+import { faDiscord } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Navbar = () => {
   const router = useRouter();
@@ -37,49 +36,43 @@ const Navbar = () => {
     setLoading(true);
   }, []);
 
-
   return (
-    
-    <NavbarStyles className={navbar ? 'active' : ''}>
-      <Container className='container'>
+    <NavbarStyles className={navbar ? "active" : ""}>
+      <Container className="container">
         <div className="brand-container">
-          <Link href='/'>
-            <Image
-              className='brand'
-              src={brand}
-              alt="RX6"
-            />
+          <Link href="/">
+            <Image className="brand" src={brand} alt="RX6" />
           </Link>
         </div>
 
         <div className="links-container">
           <ul>
             <li className={router.pathname == "/" ? "active" : ""}>
-              <Link href='/'>Início</Link>
+              <Link href="/">Início</Link>
             </li>
             <li>
-              <Link href='/#platforms' scroll={false}>Nossos serviços</Link>
+              <Link href="/#platforms" scroll={false}>
+                Nossos serviços
+              </Link>
             </li>
             <li className={router.pathname == "/institucional" ? "active" : ""}>
-              <Link href='/institucional/politicas-de-privacidade'>Institucional</Link>
-            </li>
-            <li>
-              <Link href='/teste'>Quem somos?</Link>
+              <Link href="/institucional/politicas-de-privacidade">
+                Institucional
+              </Link>
             </li>
           </ul>
         </div>
 
-        <div className='discord-cta'>
-          <a href='https://discord.gg/fJC24gpDZ2' target='_blank'>
-            <button className='button'>
+        <div className="discord-cta">
+          <a href="https://discord.gg/fJC24gpDZ2" target="_blank">
+            <button className="button">
               <FontAwesomeIcon icon={faDiscord} /> Servidor do Discord
             </button>
           </a>
         </div>
       </Container>
     </NavbarStyles>
-    
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
